@@ -81,7 +81,6 @@ const groupData = (type: string) => {
 
 
 // #2 
-
 const resultUsers = removeDuplicates(RAW_USERS);
 const showData = computed(() => isOriginal.value ? RAW_USERS : resultUsers);
 
