@@ -11,7 +11,7 @@ In this case: setup() > mounted() > watch > console.log
 - After that, the `mounted()` hook is triggered and then execute `this.count++`
 - `count` is returned from `setup()`, it is reactive.
 - `watch` is also triggered because `count` was changed from `mounted()` (0 to 1) (The watcher tracks reactive dependencies.)
-- When `count` increases from 0 to 1 then the `watch` function executes immediately. So the log will be 1 0 (newVal, oldVal)
+- When `count` increases from 0 to 1 then the `watch` function executes immediately. So the log will be `1 (newVal)` `0 (oldVal)`
 
 #
 
@@ -35,7 +35,7 @@ In Vue, it automatically tracks `count` as a dependency. Whenever `count` change
 **Question b:** If there is any bug, how would you fix it to make it safe?
 
 **Answer:**
-I would fix it by always checking the value to ensure the website or application does not crash.
+I would fix it by always checking the value to make it safe and ensure the website or application does not crash.
 
 e.g. `return this.title ? this.title.toUpperCase() : 'No Title';`
 
