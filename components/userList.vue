@@ -57,7 +57,6 @@ export default {
   methods: {
     toggleSort() {
         this.isDescending = !this.isDescending;
-        console.log(this.isDescending)
     },
   },
 }
