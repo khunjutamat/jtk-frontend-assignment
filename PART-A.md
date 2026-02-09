@@ -13,7 +13,7 @@ In this case: setup() > mounted() > watch > console.log
 - `watch` is also triggered because `count` was changed from `mounted()` (0 to 1) (The watcher tracks reactive dependencies.)
 - When `count` increases from 0 to 1 then the `watch` function executes immediately. So the log will be 1 0 (newVal, oldVal)
 
-
+#
 
 **Question b:** When will `double` be re-computed?
 
@@ -24,4 +24,22 @@ In Vue, it automatically tracks `count` as a dependency. Whenever `count` change
 
 
 
+## 2. Code Debugging
+**Question a:** Does this code contain a bug?
+
+**Answer:**
+ํYes, the code contains a bug in the `upperTitle()` computed property. This is because the code calls `.toUpperCase()` directly on `this.title` and the `title` property is passed from the parent component (use props for setting the parent's value in the child component). If the parent component does not pass or forget to pass the title prop,`this.title` will be `undefined`. This will cause the website or application to crash.
+
+#
+
+**Question b:** If there is any bug, how would you fix it to make it safe?
+
+**Answer:**
+I would fix it by always checking the value to ensure the website or application does not crash.
+
+e.g. `return this.title ? this.title.toUpperCase() : 'No Title';`
+
+// Check if `this.title` exists. Otherwise, return a string
+
+or `return this.title?.toUpperCase() ?? 'No Title';`
 
