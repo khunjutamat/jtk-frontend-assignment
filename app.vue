@@ -3,7 +3,7 @@
     <nav class="navbar">
       <NuxtLink to="/" class="nav-item">Home</NuxtLink> |
       <NuxtLink to="/part-b" class="nav-item">Part B</NuxtLink> |
-      <NuxtLink to="/car-spec" class="nav-item">PART C</NuxtLink>
+      <NuxtLink to="/car-spec" class="nav-item">Part C</NuxtLink>
     </nav>
 
     <hr />

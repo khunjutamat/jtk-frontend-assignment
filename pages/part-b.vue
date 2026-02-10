@@ -8,10 +8,13 @@
       <h3>1.Implement a groupBy function.</h3>
       
       <div class="container">
+        <span style="font-size: 12px; font-weight: 600;">
+          * click on any buttons to check the result data. (default: electronics)
+        </span>
         <div class="stats">
-          <button class="button-custom" @click="groupData('electronics')">Test Electronics</button>
-          <button class="button-custom" @click="groupData('furniture')">Test Furniture</button>
-          <button class="button-custom" @click="groupData('fashion')">Test Fashion</button>
+          <button class="button-custom" @click="groupData('electronics')">Electronics</button>
+          <button class="button-custom" @click="groupData('furniture')">Furniture</button>
+          <button class="button-custom" @click="groupData('fashion')">Fashion</button>
           <button class="button-custom" @click="groupData('')">All Data</button>
         </div>
       </div>
@@ -27,11 +30,12 @@
       <h3>2.Implement a function to remove duplicate values</h3>
 
       <div class="container">
+        <span style="font-size: 12px; font-weight: 600;">
+          * click on any buttons to check the result data. (default: original data)
+        </span>
         <div class="stats">
-          <!-- <p>Original Data: <strong>{{ rawUsers.length }}</strong> items</p>
-          <p>Cleaned Data: <strong>{{ resultUsers.length }}</strong> items</p> -->
           <button class="button-custom" @click="toggleData('original')">Original Data</button>
-          <button class="button-custom" @click="toggleData('clean')">Result Data</button>
+          <button class="button-custom" @click="toggleData('clean')">Cleaned Data</button>
         </div>
 
         <div class="display-grid">

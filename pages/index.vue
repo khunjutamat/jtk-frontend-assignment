@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4>Home Page | User List</h4>
-    <h5>Create a /users page and a userList.vue component (PART B: Coding & Algorithms)</h5>
+    <h5>Create a /users page and a userList.vue component (PART B: #3)</h5>
     <userList :users="USER_DATA" />
   </div>
 </template>
