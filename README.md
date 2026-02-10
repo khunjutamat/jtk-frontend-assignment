@@ -27,7 +27,7 @@
 
 
 ## 3. PART C: SCSS & Styling
-**Live Demo**: Navigate to the `/part-c` route.
+**Live Demo**: Navigate to the `/car-spec` route.
 
 * Create a page that looks exactly the same as the picture with only one  `.scss ` file that does not have any library included.
 * Create the  `.scss ` file `(mixins, variables)`.
