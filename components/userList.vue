@@ -100,7 +100,7 @@ export default {
   color: #fff;
   border: none;
   padding: 10px 24px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;

@@ -9,10 +9,10 @@
       
       <div class="container">
         <div class="stats">
-          <button @click="groupData('electronics')">Test Electronics</button>
-          <button @click="groupData('furniture')">Test Furniture</button>
-          <button @click="groupData('fashion')">Test Fashion</button>
-          <button @click="groupData('')">All Data</button>
+          <button class="button-custom" @click="groupData('electronics')">Test Electronics</button>
+          <button class="button-custom" @click="groupData('furniture')">Test Furniture</button>
+          <button class="button-custom" @click="groupData('fashion')">Test Fashion</button>
+          <button class="button-custom" @click="groupData('')">All Data</button>
         </div>
       </div>
 
@@ -30,8 +30,8 @@
         <div class="stats">
           <!-- <p>Original Data: <strong>{{ rawUsers.length }}</strong> items</p>
           <p>Cleaned Data: <strong>{{ resultUsers.length }}</strong> items</p> -->
-          <button @click="toggleData('original')">Original Data</button>
-          <button @click="toggleData('clean')">Result Data</button>
+          <button class="button-custom" @click="toggleData('original')">Original Data</button>
+          <button class="button-custom" @click="toggleData('clean')">Result Data</button>
         </div>
 
         <div class="display-grid">
@@ -95,15 +95,35 @@ const toggleData = (type: string) => {
 
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 
-  .container { padding: 20px; }
+  .container { 
+    padding: 20px; 
+  }
+
+
+  .button-custom {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover { 
+      background-color: #008f54; 
+    }
+  }
+
 
   .stats { 
     display: flex; 
-    gap: 20px; 
-    margin-bottom: 20px; 
-    color: #2c3e50; 
+    gap: 10px;
   }
 
   .code-block { 
