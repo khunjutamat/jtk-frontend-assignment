@@ -29,7 +29,7 @@
 
 .nav-item {
   text-decoration: none;
-  color: #24bd7dd7;
+  color: #04AA6D;
   font-weight: bold;
 }
 

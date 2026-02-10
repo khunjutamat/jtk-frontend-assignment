@@ -6,7 +6,7 @@
         </button>
     </div>
 
-    <table border="1" class="data-table">
+    <table class="data-table">
       <thead>
         <tr>
           <th>ID</th>
@@ -67,6 +67,24 @@ export default {
 
 .data-table {
     justify-self: center;
+
+    td, th {
+      border: 0px solid #ddd;
+      padding: 8px;
+      font-size: 12px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+
+    tr:hover {background-color: #ddd;}
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
 }
 
 
@@ -78,7 +96,7 @@ export default {
 
 
 .toggle-btn {
-  background: #188038;;
+  background: #04AA6D;
   color: #fff;
   border: none;
   padding: 10px 24px;
@@ -93,7 +111,7 @@ export default {
 }
 
 .toggle-btn:hover {
-    background-color: #0bb870; 
+    background-color: #008f54; 
 }
 
 
