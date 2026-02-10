@@ -1,0 +1,135 @@
+// Color Variables
+$color-bg-table: #F3F4F6;
+$color-bg-grey: #CCCCCC;
+$color-bg-arrow: #8AA6A4;
+$color-border: #ddd;
+$color-active: #188038;
+
+
+
+$color-benz-dark: #232E3C;
+$color-table-border: #ececec;
+$color-table-hover: #f5f5f5;
+$color-text-label: #666666;
+$color-text-white: #fff;
+
+$scrollbar-track: #f1f1f1;
+$scrollbar-thumb: #888;
+$scrollbar-thumb-hover: #555;
+
+
+// Mixins - Text
+@mixin title-font {
+    font-family: 'Orbitron';
+    font-size: 28px;
+    font-weight: 700;
+    color: $color-benz-dark;
+}
+
+@mixin subtitle-font {
+    font-family: 'Orbitron';
+    font-size: 18px;
+    color: $color-text-label;
+    margin-bottom: 10px;
+}
+
+@mixin spec-font {
+    font-family: 'Orbitron';
+    font-size: 16px;
+    // font-weight: 500;
+    color: $color-text-label;
+}
+
+@mixin custom-scrollbar {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $scrollbar-track;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        border-radius: 10px;
+
+    }
+}
+
+// hover effect in the table (each row)
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Orbitron';
+  
+  tr {
+    border-bottom: 1px solid $color-table-border;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $color-table-hover; // Hover effect
+    }
+
+    &:nth-child(odd){
+        background-color: $color-bg-table;
+    }
+
+    td {
+        @include spec-font;
+        padding: 4px;
+        text-align: left;
+
+        &:td-label{
+            color: $color-benz-dark;
+        }
+    }
+  }
+}
+
+// active effect (image carousel)
+.thumbnail-container {
+  display: flex;
+  margin-top: 20px;
+//   width: 50%;
+
+    .thumb {
+        width: 80px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        align-content: center;
+
+        &.active {
+            background-color: $color-bg-grey;
+            border: 2px solid $color-active; // Active effect
+
+            img {
+                mix-blend-mode: multiply; 
+                filter: brightness(1); 
+            }
+        }
+
+        &:not(.active) {
+            border-color: $color-border; // Not Active effect
+            opacity: 1;
+            margin: 1px;
+        }
+
+    }
+
+    .circle-bg {
+        margin: 20px;
+        align-self: center;
+        height: 20px;
+        width: 20px;
+        color: $color-text-white;
+        background-color: $color-bg-arrow;
+        border-radius: 50%;
+
+        .prev-arrow,
+        .next-arrow {
+            margin: -1.2px 0px 0px 2px;
+        }
+    }
+}

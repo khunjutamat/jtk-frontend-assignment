@@ -2,8 +2,8 @@
   <div class="app-container">
     <nav class="navbar">
       <NuxtLink to="/" class="nav-item">Home</NuxtLink> |
-      <NuxtLink to="/part-b" class="nav-item">Part B (Logic)</NuxtLink> |
-      <!-- <NuxtLink to="/part-c" class="nav-item">Part C (UI)</NuxtLink> -->
+      <NuxtLink to="/part-b" class="nav-item">Part B</NuxtLink> |
+      <NuxtLink to="/car-spec" class="nav-item">PART C</NuxtLink>
     </nav>
 
     <hr />
@@ -29,7 +29,7 @@
 
 .nav-item {
   text-decoration: none;
-  color: #00dc82;
+  color: #24bd7dd7;
   font-weight: bold;
 }
 

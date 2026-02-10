@@ -78,7 +78,7 @@ export default {
 
 
 .toggle-btn {
-  background: #00c16a;
+  background: #188038;;
   color: #fff;
   border: none;
   padding: 10px 24px;
@@ -93,7 +93,7 @@ export default {
 }
 
 .toggle-btn:hover {
-    background-color: #008f54; 
+    background-color: #0bb870; 
 }
 
 

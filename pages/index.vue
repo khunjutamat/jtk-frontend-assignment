@@ -7,7 +7,6 @@
 
 
 <script setup lang="ts">
-// import { USER_DATA } from '~/constants/mockData';
 
 const USER_DATA = [
   { id: 1, name: "Alice Johnson", email: "alice.johnson@example.com", age: 22, role: "Intern" },
