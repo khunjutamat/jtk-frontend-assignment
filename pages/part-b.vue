@@ -8,7 +8,7 @@
       <h3>1.Implement a groupBy function.</h3>
       
       <div class="container">
-        <span style="font-size: 12px; font-weight: 600;">
+        <span style="font-size: 12px; font-weight: 500;">
           * click on any buttons to check the result data. (default: electronics)
         </span>
         <div class="stats">
